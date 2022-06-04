@@ -1,4 +1,5 @@
 import React from 'react'
+import image from '../images/pic1.jpg'
 import {  Row, Col, Container } from "react-bootstrap";
 
 export default function About() {
@@ -10,7 +11,7 @@ export default function About() {
 
             <Col sm ={6} md = {5}>
                 <div className='bg-image'>
-
+                  <img src={image} alt=''></img>  
                 </div>
             </Col>
             
