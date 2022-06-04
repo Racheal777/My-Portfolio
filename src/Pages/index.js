@@ -3,19 +3,21 @@ import Navbarr from "../Controllers/Navbar";
 import About from "./about";
 import Projects from "./projects";
 import {  Row, Col, Container } from "react-bootstrap";
+import Navigation from "../Controllers/Navigation";
+import Example from "../Controllers/Navigation";
 
 export default function Index() {
   return (
-    <div>
-      {/* <Container fluid> */}
-        <Row>
-          <Col>
+    <div className=" md:mx-auto">
+      
+        
             <header>
+              {/* <Example/> */}
               <Navbarr />
 
-              <Row className="header">
-                <Col sm={7} md={7}>
-                  <div className="text">
+              <div className="header flex-1 md:flex py-4 px-4 md:py-8">
+                
+                  <div className="text flex-auto  md:w-1/3">
                     <h2>
                       {" "}
                       Hello,{" "}
@@ -23,17 +25,16 @@ export default function Index() {
                     </h2>
                     <button>Hire me</button>
                   </div>
-                </Col>
+               
 
-                <Col sm={5} md={5}>
-                  <div className="img">
+                
+                  <div className="img flex w-1/3">
                     <img src="" alt="picture"></img>
                   </div>
-                </Col>
-              </Row>
+                  
+                </div>
             </header>
-          </Col>
-        </Row>
+          
       {/* </Container> */}
 
       <section>
