@@ -16,6 +16,11 @@ export default function Footer() {
                 <p>+233 (0) 542 802959</p>
             </div>
         </footer>
+
+        <p>Designed with by RachealKuranchie
+            <br></br>
+            <span>Copyright 2022</span>
+        </p>
     </div>
   )
 }
