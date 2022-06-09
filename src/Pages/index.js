@@ -12,7 +12,7 @@ export default function Index() {
         <Navbarr />
 
         <div className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
-          <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
+          <div className="text basis-1/2 md:basis-1/2 items-center justify-center text-center md:text-left  ">
             <h2 className=" w-full">
               {" "}
               Hello, <br></br>
@@ -149,7 +149,7 @@ export default function Index() {
 
           <li className="dot">Git & GitHub</li>
 
-          <li className="dot">React.js</li>
+          <li className="dot">React.js & Redux</li>
 
           <li className="dot">Figma</li>
         </div>
