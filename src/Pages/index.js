@@ -3,7 +3,11 @@ import Navbarr from "../Controllers/Navbar";
 import image from "../images/pic1.jpg";
 import Footer from "../Controllers/Footer";
 import image2 from "../images/pic2.png";
+import movie from '../images/screen.png'
 import accra from '../images/accra.png'
+import black from '../images/black.png'
+import recipe from '../images/recipe.png'
+import school from '../images/school.png'
 
 export default function Index() {
   return (
@@ -21,6 +25,7 @@ export default function Index() {
                 <span> A Software Engineer.</span>
               </span>
             </h2>
+            <p>I build cool stuff and bring your ideas to life</p>
 
             <div>
               <a
@@ -55,7 +60,7 @@ export default function Index() {
             <button className ="animate-bounce" > <a href="/" >Hire me</a></button>
           </div>
 
-          <div className="img basis-1/4 md:basis-1/3 items-center justify-center   p-0 md:w-full  ">
+          <div className="img  basis-1/4 md:basis-1/3 items-center justify-center   p-0 md:w-full  ">
             <img
               src={image2}
               alt="picture"
@@ -98,10 +103,19 @@ export default function Index() {
 
       <section className="justify-center items-center projects">
         <h2 className="font-bold ">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center m-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 place-content-center m-4 px-2">
           <div className="bg-images  md:px-4 py-4 ">
             <img
-              src={accra}
+              src={black}
+              alt="picture"
+              className=" w-full md:w-full  justify-center"
+            ></img>
+            <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
+          </div>
+
+          <div className="bg-images  md:px-4 py-4 ">
+            <img
+              src={recipe}
               alt="picture"
               className=" w-full md:w-full  justify-center"
             ></img>
@@ -110,7 +124,7 @@ export default function Index() {
 
           <div className="bg-images md:px-4 py-4">
             <img
-              src={accra}
+              src={school}
               alt="picture"
               className=" w-full  md:w-full  justify-center"
             ></img>
@@ -119,7 +133,7 @@ export default function Index() {
 
           <div className="bg-images md:px-4 py-4 ">
             <img
-              src={accra}
+              src={movie}
               alt="picture"
               className=" w-full md:w-full  justify-center "
             ></img>
@@ -136,7 +150,7 @@ export default function Index() {
 
       <section className="projects-section text-center">
         <h2 className="font-bold ">Skills</h2>
-        <div className="grid grid-cols-2 gap-4 grid-rows-4 md:grid-cols-2 place-content-center m-2">
+        <div className=" grid grid-cols-2 gap-4 grid-rows-4 md:grid-cols-2 place-content-center m-2">
           <li className="dot">JavaScript(Node.js)</li>
 
           <li className="dot">MySQL & PostgreSQL</li>

@@ -84,7 +84,7 @@ li {
   font-weight: 700;
   font-size: 18px;
   line-height: 42px;
-  color: #681AF9;
+  /* color: #681AF9; */
 
   /* identical to box height */
 
@@ -95,7 +95,7 @@ li {
 
 li .dot {
   list-style-type: square;
-  color: #681AF9;
+  /* color: #681AF9; */
   /* width: 23px;
 height: 23px; */
 
@@ -264,4 +264,9 @@ footer h3 {
 .footer p {
   font-size: 16px;
   color: white;
+}
+
+.last p, span {
+  color: #6E6E6E;
+  font-size: 13px; 
 }

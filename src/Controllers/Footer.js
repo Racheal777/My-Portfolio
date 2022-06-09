@@ -17,10 +17,14 @@ export default function Footer() {
             </div>
         </footer>
 
+        <div className='last'>
         <p>Designed with by RachealKuranchie
             <br></br>
             <span>Copyright 2022</span>
         </p>
+        </div>
+
+       
     </div>
   )
 }
