@@ -30,7 +30,7 @@ export default function Navbarr() {
                   <Nav.Link href="/" className="text-dark">
                     About
                   </Nav.Link>
-                  <Nav.Link href="/" className="text-dark">
+                  <Nav.Link href="/project" className="text-dark">
                     Projects
                   </Nav.Link>
                   <Nav.Link href="/admin" className="text-dark">

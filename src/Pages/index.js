@@ -3,6 +3,7 @@ import Navbarr from "../Controllers/Navbar";
 import image from "../images/pic1.jpg";
 import Footer from "../Controllers/Footer";
 import image2 from "../images/pic2.png";
+import accra from '../images/accra.png'
 
 export default function Index() {
   return (
@@ -51,7 +52,7 @@ export default function Index() {
                 <i class="fa-brands fa-medium"></i>
               </a>
             </div>
-            <button>Hire me</button>
+            <button className ="animate-bounce" > <a href="/" >Hire me</a></button>
           </div>
 
           <div className="img basis-1/4 md:basis-1/3 items-center justify-center   p-0 md:w-full  ">
@@ -82,8 +83,12 @@ export default function Index() {
             <br></br>
             Kagon beck koscheria kans för kropp. Stenons nyfägen bekagon semick.
             Benerar sobarade de nyv laras sarade.
+
+            <br></br>
+            Kagon beck koscheria kans för kropp. Stenons nyfägen bekagon semick.
+            Benerar sobarade de nyv laras sarade.
           </p>
-          <button className="btns">Read more</button>
+          {/* <button className="btns">Read more</button> */}
         </div>
       </section>
 
@@ -93,36 +98,40 @@ export default function Index() {
 
       <section className="justify-center items-center projects">
         <h2 className="font-bold ">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center m-8">
-          <div className="bg-images space-x-2 space-y-4  md:space-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center m-8 px-4">
+          <div className="bg-images  md:px-4 py-4 ">
             <img
-              src={image2}
+              src={accra}
               alt="picture"
-              className="h-96 w-full md:w-full  justify-center"
+              className=" w-full md:w-full  justify-center"
             ></img>
-            <button className="btns hover:bg-fuchsia-700">View Project</button>
+            <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
           </div>
 
-          <div className="bg-images space-x-2 space-y-4  md:space-x-8 ">
+          <div className="bg-images md:px-4 py-4">
             <img
-              src={image2}
+              src={accra}
               alt="picture"
-              className="h-96 w-full  md:w-full  justify-center"
+              className=" w-full  md:w-full  justify-center"
             ></img>
-            <button className="btns hover:bg-fuchsia-700">View Project</button>
+            <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
           </div>
 
-          <div className="bg-images  space-x-2 space-y-4  md:space-x-8">
+          <div className="bg-images md:px-4 py-4 ">
             <img
-              src={image2}
+              src={accra}
               alt="picture"
-              className=" h-96 w-full md:w-full  justify-center "
+              className=" w-full md:w-full  justify-center "
             ></img>
-            <button className="btns hover:bg-fuchsia-700">View Project</button>
+            <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
           </div>
         </div>
 
-        <button className="btnz hover:">View More</button>
+        <div className="view">
+        <button className="btnz hover:"><a href="/project" className="text-violet-700">View More</a></button>
+        </div>
+
+        
       </section>
 
       <section className="projects-section text-center">
@@ -152,7 +161,7 @@ export default function Index() {
             <button className="btnz hover:">Download CV</button>
           </div>
           <div>
-            <button className="btnz hover:">Get in Touch</button>
+            <button className="btnz hover:"><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmCKLCLhmDmRfKKsMFtFtHnzRJpddksgGgvKZcSxFZsMncwwLkkqgDDVGcqDjQCpBCdPJLg" target='_blank'>Get in Touch</a></button>
           </div>
         </div>
       </section>
