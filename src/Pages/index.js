@@ -5,6 +5,7 @@ import Footer from "../Controllers/Footer";
 import image2 from "../images/pic2.png";
 import movie from '../images/screen.png'
 import accra from '../images/accra.png'
+import pal from '../images/pal.png'
 import black from '../images/black.png'
 import recipe from '../images/recipe.png'
 import school from '../images/school.png'
@@ -33,31 +34,31 @@ export default function Index() {
                 target="_blank"
                 className="icon p-3"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
               <a
                 href="https://twitter.com/RachealKuranch2"
                 target="_blank"
                 className="icon p-3"
               >
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </a>
               <a
                 href="https://github.com/Racheal777"
                 target="_blank"
                 className="icon p-3"
               >
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
               <a
                 href="https://medium.com/@rachealkuranchie"
                 target="_blank"
                 className="icon p-3"
               >
-                <i class="fa-brands fa-medium"></i>
+                <i className="fa-brands fa-medium"></i>
               </a>
             </div>
-            <button className ="animate-bounce" > <a href="/" >Hire me</a></button>
+            <button className ="animate-bounce bg-gradient-to-r hover:from-cyan-500 hover:to-bg-fuchsia-700" > <a href="/" >Hire me</a></button>
           </div>
 
           <div className="img  basis-1/4 md:basis-1/3 items-center justify-center   p-0 md:w-full  ">
@@ -92,6 +93,19 @@ export default function Index() {
             <br></br>
             Kagon beck koscheria kans för kropp. Stenons nyfägen bekagon semick.
             Benerar sobarade de nyv laras sarade.
+
+            <br></br>
+            Kagon beck koscheria kans för kropp. Stenons nyfägen bekagon semick.
+            Benerar sobarade de nyv laras sarade.
+
+          
+
+            Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
+            mingen. Bek kokrosamma infrar. Ynt äktigt isk. Pon favis panektig.
+            Soliga astroling att mikrosk i influerare.
+            <br></br>
+            Lad monodat wikiläcka. Spedigisk vetretest i raren fön och nysogisk.
+            Or hyposamma spest. Byfaktigt oliga bebagt vektigt.
           </p>
           {/* <button className="btns">Read more</button> */}
         </div>
@@ -106,7 +120,7 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-3 place-content-center m-4 px-2">
           <div className="bg-images  md:px-4 py-4 ">
             <img
-              src={black}
+              src={pal}
               alt="picture"
               className=" w-full md:w-full  justify-center"
             ></img>
@@ -124,7 +138,7 @@ export default function Index() {
 
           <div className="bg-images md:px-4 py-4">
             <img
-              src={recipe}
+              src={movie}
               alt="picture"
               className=" w-full  md:w-full  justify-center"
             ></img>
@@ -133,7 +147,7 @@ export default function Index() {
 
           <div className="bg-images md:px-4 py-4 ">
             <img
-              src={movie}
+              src={black}
               alt="picture"
               className=" w-full md:w-full  justify-center "
             ></img>
@@ -142,7 +156,7 @@ export default function Index() {
         </div>
 
         <div className="view">
-        <button className="btnz hover:"><a href="/project" className="text-violet-700">View More</a></button>
+        <button className="animate-bounce btnz bg-gradient-to-r hover:from-cyan-500 hover:to-bg-fuchsia-700"><a href="/project" className="text-violet-700">View More</a></button>
         </div>
 
         

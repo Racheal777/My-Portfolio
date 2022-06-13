@@ -31,12 +31,17 @@ export default function Navbarr() {
                     About
                   </Nav.Link>
                   <Nav.Link href="/project" className="text-dark">
-                    Projects
+                    My Projects
                   </Nav.Link>
-                  <Nav.Link href="/admin" className="text-dark">
+                  <Nav.Link href="/article" className="text-dark">
                     Articles
                   </Nav.Link>
+
+                  <Nav.Link href="/article" className="text-dark">
+                    Get in Touch
+                  </Nav.Link>
                 </Nav>
+
               </div>
             </Navbar.Collapse>
           </Container>

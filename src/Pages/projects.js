@@ -4,6 +4,8 @@ import accra from '../images/accra.png'
 import planner from '../images/Screenshot 2022-06-13 at 12.12.00 PM.png'
 import todo from '../images/Screenshot 2022-06-13 at 12.23.08 PM.png'
 import list from '../images/Screenshot 2022-06-13 at 12.32.51 PM.png'
+import shoe from '../images/shoes.png'
+import article from '../images/article.png'
 import movie from '../images/screen.png'
 import Navbarr from "../Controllers/Navbar";
 import Footer from "../Controllers/Footer";
@@ -173,8 +175,86 @@ export default function Projects() {
           
         </section>
 
+        <header>
+        
+
+        <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
+          <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
+            <h2 className="font-bold text-violet-700 ">Articles Page </h2>
+            <p>
+              Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
+              mingen. Bek kokrosamma infrar. Ynt äktigt isk. Lad monodat
+              wikiläcka. Spedigisk vetretest i raren fön och nysogisk. Or
+              hyposamma spest. Byfaktigt oliga bebagt vektigt. Pyr teskap att
+              täde denas. Bioligt bende eftersom junebelt om cookie i goras.
+              Låmid pårende bebel låligt kan.
+            </p>
+            <div>
+            <a
+                href="https://github.com/Racheal777"
+                target="_blank"
+                className="icon p-3"
+              >
+                <i class="fa-brands fa-github"></i>GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/racheal-kuranchie"
+                target="_blank"
+                className="icon p-3"
+              >
+                <i class="fa-brands fa-linkedin"></i>LinkdIn post
+              </a>
+            </div>
+            <button className="btnz hover:">View Project</button>
+          </div>
+
+          <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
+            <img src={article} alt="pic" className="w-full"></img>
+          </div>
+        </section>
+      </header>
+
+      <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
+      <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
+            <img src={shoe} alt="pic" className="w-full"></img>
+          </div>
+          
+          <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
+            <h2 className="font-bold text-violet-700">E-commerce App</h2>
+            <p>
+              Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
+              mingen. Bek kokrosamma infrar. Ynt äktigt isk. Lad monodat
+              wikiläcka. Spedigisk vetretest i raren fön och nysogisk. Or
+              hyposamma spest. Byfaktigt oliga bebagt vektigt. Pyr teskap att
+              täde denas. Bioligt bende eftersom junebelt om cookie i goras.
+              Låmid pårende bebel låligt kan.
+            </p>
+            <div>
+            <a
+                href="https://github.com/Racheal777"
+                target="_blank"
+                className="icon p-3"
+              >
+                <i class="fa-brands fa-github"></i>GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/racheal-kuranchie"
+                target="_blank"
+                className="icon p-3"
+              >
+                <i class="fa-brands fa-linkedin"></i>LinkdIn post
+              </a>
+            </div>
+            <button className="btnz hover:">View Project</button>
+          </div>
+
+          
+        </section>
+
 <header>
-<section className="git">
+<section className="git mx-8">
           <div>
             <p>Visit my github to view more projects</p>
             <a
