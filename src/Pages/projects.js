@@ -1,6 +1,9 @@
 import React from "react";
 import image from "../images/pic1.jpg";
 import accra from '../images/accra.png'
+import planner from '../images/Screenshot 2022-06-13 at 12.12.00 PM.png'
+import todo from '../images/Screenshot 2022-06-13 at 12.23.08 PM.png'
+import list from '../images/Screenshot 2022-06-13 at 12.32.51 PM.png'
 import movie from '../images/screen.png'
 import Navbarr from "../Controllers/Navbar";
 import Footer from "../Controllers/Footer";
@@ -56,11 +59,11 @@ export default function Projects() {
 
       <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
       <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
-            <img src={image} alt="pic" className="w-full"></img>
+            <img src={list} alt="pic" className="w-full"></img>
           </div>
           
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
-            <h2 className="font-bold text-violet-700">Shopping List App</h2>
+            <h2 className="font-bold text-violet-700">Todo App</h2>
             <p>
               Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
               mingen. Bek kokrosamma infrar. Ynt äktigt isk. Lad monodat
@@ -97,7 +100,7 @@ export default function Projects() {
 
         <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
-            <h2 className="font-bold text-violet-700 ">Todo App </h2>
+            <h2 className="font-bold text-violet-700 ">Soft Life Planner </h2>
             <p>
               Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
               mingen. Bek kokrosamma infrar. Ynt äktigt isk. Lad monodat
@@ -127,18 +130,18 @@ export default function Projects() {
           </div>
 
           <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
-            <img src={image} alt="pic" className="w-full"></img>
+            <img src={todo} alt="pic" className="w-full"></img>
           </div>
         </section>
       </header>
 
       <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
       <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
-            <img src={movie} alt="pic" className="w-full"></img>
+            <img src={planner} alt="pic" className="w-full"></img>
           </div>
           
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
-            <h2 className="font-bold text-violet-700">Movie App</h2>
+            <h2 className="font-bold text-violet-700">Shopping list App</h2>
             <p>
               Lörem ipsum heterov lynat paramun. Gälig poprens etira på anas:
               mingen. Bek kokrosamma infrar. Ynt äktigt isk. Lad monodat

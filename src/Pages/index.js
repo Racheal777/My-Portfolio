@@ -103,7 +103,7 @@ export default function Index() {
 
       <section className="justify-center items-center projects">
         <h2 className="font-bold ">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 place-content-center m-4 px-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center m-4 px-2">
           <div className="bg-images  md:px-4 py-4 ">
             <img
               src={black}
@@ -113,18 +113,18 @@ export default function Index() {
             <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
           </div>
 
-          <div className="bg-images  md:px-4 py-4 ">
+          {/* <div className="bg-images  md:px-4 py-4 ">
             <img
               src={recipe}
               alt="picture"
               className=" w-full md:w-full  justify-center"
             ></img>
             <button className="btns hover:bg-fuchsia-700"><a href="/project">View Project</a></button>
-          </div>
+          </div> */}
 
           <div className="bg-images md:px-4 py-4">
             <img
-              src={school}
+              src={recipe}
               alt="picture"
               className=" w-full  md:w-full  justify-center"
             ></img>
