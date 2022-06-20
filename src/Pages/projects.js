@@ -1,4 +1,7 @@
 import React from "react";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn,
+   FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut,
+    Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import image from "../images/pic1.jpg";
 import accra from '../images/accra.png'
 import planner from '../images/Screenshot 2022-06-13 at 12.12.00 PM.png'
@@ -11,11 +14,18 @@ import Navbarr from "../Controllers/Navbar";
 import Footer from "../Controllers/Footer";
 
 export default function Projects() {
+  const ZoomInScrollOut = batch(Fade(),  MoveOut(0, -200));
+  const FadeUp = batch(MoveIn());
   return (
     <div className=" md:mx-auto project">
+      <ScrollContainer>
+
+      <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
       <header>
         <Navbarr />
 
+      
         <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
             <h2 className="font-bold text-violet-700 ">Discover Accra App</h2>
@@ -50,15 +60,32 @@ export default function Projects() {
                 <i class="fa-brands fa-linkedin"></i>LinkdIn post
               </a>
             </div>
+            <div className="icons flex md:flex py-4 px-4 ">
+                    <p>
+                      <i className="fa-brands fa-js px-2 m-2 bg-yellow-500 text-xl"></i>
+                    </p>
+                    <p>
+                      <i className="fa-brands fa-html5 px-2 m-2 bg-rose-500 text-xl"></i>
+                    </p>
+                    <p>
+                      <i className="fa-brands fa-css3 px-2 m-2 bg-blue-700 text-xl"></i>
+                    </p>
+                    <p><i class="fa-brands fa-react px-2 m-2 bg-blue-700 text-xl"></i></p>
+                  </div>
             <button className="btnz hover:"> <a href="https://discover-accra.vercel.app/" target='_blank'>View Project</a></button>
           </div>
 
           <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
             <img src={accra} alt="pic" className="w-full"></img>
+            
           </div>
         </section>
       </header>
+      </Animator>
+        </ScrollPage>
 
+        <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
       <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
       <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
             <img src={list} alt="pic" className="w-full"></img>
@@ -91,16 +118,30 @@ export default function Projects() {
                 <i class="fa-brands fa-linkedin"></i>LinkdIn post
               </a>
             </div>
+            <div className="icons flex md:flex py-4 px-4 ">
+                    <p>
+                      <i className="fa-brands fa-js px-2 m-2 bg-yellow-500 text-xl"></i>
+                    </p>
+                    <p>
+                      <i className="fa-brands fa-html5 px-2 m-2 bg-rose-500 text-xl"></i>
+                    </p>
+                    <p>
+                      <i className="fa-brands fa-css3 px-2 m-2 bg-blue-700 text-xl"></i>
+                    </p>
+                    <p><i class="fa-brands fa-react px-2 m-2 bg-blue-700 text-xl"></i></p>
+                  </div>
             <button className="btnz hover:">View Project</button>
           </div>
 
           
         </section>
+        </Animator>
+        </ScrollPage>
 
+        <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
         <header>
-        
-
-        <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
+        <section className="header flex-1 md:flex py-8 px-4 md:py-8  justify-around m-8">
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
             <h2 className="font-bold text-violet-700 ">Soft Life Planner </h2>
             <p>
@@ -136,7 +177,11 @@ export default function Projects() {
           </div>
         </section>
       </header>
+      </Animator>
+        </ScrollPage>
 
+        <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
       <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
       <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
             <img src={planner} alt="pic" className="w-full"></img>
@@ -174,10 +219,12 @@ export default function Projects() {
 
           
         </section>
+        </Animator>
+        </ScrollPage>
 
+        <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
         <header>
-        
-
         <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
           <div className="text basis-1/2 md:basis-1/2 items-center justify-center sm:text-center md:text-left  ">
             <h2 className="font-bold text-violet-700 ">Articles Page </h2>
@@ -215,7 +262,13 @@ export default function Projects() {
         </section>
       </header>
 
-      <section className="header flex-1 md:flex py-4 px-4 md:py-8 justify-around m-8">
+      </Animator>
+        </ScrollPage>
+
+
+        <ScrollPage>
+          <Animator animation={ZoomInScrollOut}>
+      <section className="header flex-1 md:flex py-8 px-4 md:py-8 justify-around m-8">
       <div className="basis-1/4 md:basis-1/3 md:w-1/4  md:basis-1/2 bg-image m-8 ">
             <img src={shoe} alt="pic" className="w-full"></img>
           </div>
@@ -249,12 +302,14 @@ export default function Projects() {
             </div>
             <button className="btnz hover:">View Project</button>
           </div>
-
-          
+  
         </section>
+        </Animator>
+        </ScrollPage>
 
-<header>
-<section className="git mx-8">
+
+      <header>
+      <section className="git mx-8">
           <div>
             <p>Visit my github to view more projects</p>
             <a
@@ -269,8 +324,9 @@ export default function Projects() {
 </header>
         
 
-
+        </ScrollContainer>
         <Footer/>
+        
     </div>
   );
 }

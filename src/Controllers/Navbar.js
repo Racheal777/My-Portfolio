@@ -3,10 +3,21 @@ import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "../App.css";
 import "../nav.css";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade,FadeUp, FadeIn,
+  FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut,
+   Zoom, ZoomIn, ZoomOut, ZoomInScrollOut } from "react-scroll-motion";
 
 export default function Navbarr() {
   return (
     <div>
+
+<ScrollContainer>
+
+
+{/* <ScrollPage> */}
+    {/* <Animator animation={batch( Sticky(), )}> */}
+      
+   
       <nav className="sticky">
         <Navbar
           expand="lg"
@@ -47,6 +58,9 @@ export default function Navbarr() {
           </Container>
         </Navbar>
       </nav>
+      {/* </Animator> */}
+  {/* </ScrollPage> */}
+      </ScrollContainer>
     </div>
   );
 }
